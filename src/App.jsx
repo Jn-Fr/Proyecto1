@@ -1,8 +1,11 @@
-import profile from "./assets/profile.png";
-import grid from "./assets/grid.png";
-import "./App.css";
-import GridCard from "./components/GridCard";
-import Info from "./components/Info";
+import profile from './assets/profile.png';
+import grid from './assets/grid.png';
+
+import GridCard from './components/GridCard';
+import Info from './components/Info';
+import LikeButton from './components/LikeButton';
+
+import './App.css';
 
 export default function App() {
   return (
@@ -18,6 +21,9 @@ export default function App() {
             <GridCard />
           </div>
         </div>
+        <footer>
+          <LikeButton />
+        </footer>
       </div>
     </div>
   );

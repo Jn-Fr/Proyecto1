@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  height: 48px;
+  width: 48px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.button img {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: scale 1s ease;
+}
+
+.button img.animate {
+  display: block;
+}
+
+.button svg path {
+  stroke: #6e767d;
+}
+
+.button svg.liked {
+  fill: #f72381;
+}
+
+.button svg.liked path {
+  stroke: #f72381;
+}
+
+.count {
+  color: #6e767d;
+}
+
+.count.liked {
+  color: #f72381;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.6);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
